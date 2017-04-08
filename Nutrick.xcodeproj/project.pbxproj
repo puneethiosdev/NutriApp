@@ -12,7 +12,23 @@
 		174221AF1E78D6680019E6F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174221AD1E78D6680019E6F5 /* Main.storyboard */; };
 		174221B11E78D6680019E6F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 174221B01E78D6680019E6F5 /* Assets.xcassets */; };
 		174221B41E78D6680019E6F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174221B21E78D6680019E6F5 /* LaunchScreen.storyboard */; };
+		174221CA1E78E3020019E6F5 /* ShowSplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174221C91E78E3020019E6F5 /* ShowSplashScreen.swift */; };
+		17C809431E7A853F0096A742 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C809421E7A853F0096A742 /* SignUpViewController.swift */; };
+		17FB0D3D1E99710D00F48934 /* ActivationCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FB0D3C1E99710D00F48934 /* ActivationCodeViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		17CEEA261E8FCA60003AF552 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		174221A61E78D6680019E6F5 /* Nutrick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nutrick.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +38,9 @@
 		174221B01E78D6680019E6F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		174221B31E78D6680019E6F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		174221B51E78D6680019E6F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		174221C91E78E3020019E6F5 /* ShowSplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowSplashScreen.swift; sourceTree = "<group>"; };
+		17C809421E7A853F0096A742 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		17FB0D3C1E99710D00F48934 /* ActivationCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivationCodeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +75,13 @@
 			children = (
 				174221A91E78D6680019E6F5 /* AppDelegate.swift */,
 				174221AB1E78D6680019E6F5 /* ViewController.swift */,
+				174221C91E78E3020019E6F5 /* ShowSplashScreen.swift */,
 				174221AD1E78D6680019E6F5 /* Main.storyboard */,
 				174221B01E78D6680019E6F5 /* Assets.xcassets */,
 				174221B21E78D6680019E6F5 /* LaunchScreen.storyboard */,
 				174221B51E78D6680019E6F5 /* Info.plist */,
+				17C809421E7A853F0096A742 /* SignUpViewController.swift */,
+				17FB0D3C1E99710D00F48934 /* ActivationCodeViewController.swift */,
 			);
 			path = Nutrick;
 			sourceTree = "<group>";
@@ -74,6 +96,7 @@
 				174221A21E78D6680019E6F5 /* Sources */,
 				174221A31E78D6680019E6F5 /* Frameworks */,
 				174221A41E78D6680019E6F5 /* Resources */,
+				17CEEA261E8FCA60003AF552 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +119,8 @@
 				TargetAttributes = {
 					174221A51E78D6680019E6F5 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 2PM5WY4P2M;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -135,8 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17FB0D3D1E99710D00F48934 /* ActivationCodeViewController.swift in Sources */,
 				174221AC1E78D6680019E6F5 /* ViewController.swift in Sources */,
 				174221AA1E78D6680019E6F5 /* AppDelegate.swift in Sources */,
+				17C809431E7A853F0096A742 /* SignUpViewController.swift in Sources */,
+				174221CA1E78E3020019E6F5 /* ShowSplashScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,7 +208,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Puneeth Kumar (436WWFFZ8B)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Puneeth Kumar (436WWFFZ8B)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -202,6 +231,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "b19fce4c-f0c0-4c5f-a09a-2c2a4cc2bbf9";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -225,7 +255,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Puneeth Kumar (436WWFFZ8B)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Puneeth Kumar (436WWFFZ8B)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -240,6 +271,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "b19fce4c-f0c0-4c5f-a09a-2c2a4cc2bbf9";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -249,10 +281,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Nutrick/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Puneet.Nutrick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -260,10 +301,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Nutrick/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Puneet.Nutrick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -286,6 +336,7 @@
 				174221BA1E78D6680019E6F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
