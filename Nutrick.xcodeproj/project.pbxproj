@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1723F4281E99A4AB00E0BCE5 /* AddGroupContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1723F4271E99A4AB00E0BCE5 /* AddGroupContactsViewController.swift */; };
+		1723F42A1E99ACC800E0BCE5 /* CreateNewGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1723F4291E99ACC800E0BCE5 /* CreateNewGroupViewController.swift */; };
+		1736B5471E9979360003BD17 /* CodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736B5371E9979200003BD17 /* CodeInputView.swift */; };
 		174221AA1E78D6680019E6F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174221A91E78D6680019E6F5 /* AppDelegate.swift */; };
 		174221AC1E78D6680019E6F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174221AB1E78D6680019E6F5 /* ViewController.swift */; };
 		174221AF1E78D6680019E6F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174221AD1E78D6680019E6F5 /* Main.storyboard */; };
@@ -31,6 +34,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1723F4271E99A4AB00E0BCE5 /* AddGroupContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGroupContactsViewController.swift; sourceTree = "<group>"; };
+		1723F4291E99ACC800E0BCE5 /* CreateNewGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewGroupViewController.swift; sourceTree = "<group>"; };
+		1736B5371E9979200003BD17 /* CodeInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeInputView.swift; sourceTree = "<group>"; };
 		174221A61E78D6680019E6F5 /* Nutrick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nutrick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		174221A91E78D6680019E6F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		174221AB1E78D6680019E6F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +45,7 @@
 		174221B31E78D6680019E6F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		174221B51E78D6680019E6F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		174221C91E78E3020019E6F5 /* ShowSplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowSplashScreen.swift; sourceTree = "<group>"; };
+		17BBBB041EACF3EF00A1A51E /* Nutrick.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Nutrick.entitlements; sourceTree = "<group>"; };
 		17C809421E7A853F0096A742 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		17FB0D3C1E99710D00F48934 /* ActivationCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivationCodeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,9 +61,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1736B5341E9979200003BD17 /* CodeInputView */ = {
+			isa = PBXGroup;
+			children = (
+				1736B5361E9979200003BD17 /* CodeInputView */,
+			);
+			name = CodeInputView;
+			path = External/CodeInputView;
+			sourceTree = "<group>";
+		};
+		1736B5361E9979200003BD17 /* CodeInputView */ = {
+			isa = PBXGroup;
+			children = (
+				1736B5371E9979200003BD17 /* CodeInputView.swift */,
+			);
+			path = CodeInputView;
+			sourceTree = "<group>";
+		};
 		1742219D1E78D6680019E6F5 = {
 			isa = PBXGroup;
 			children = (
+				1736B5341E9979200003BD17 /* CodeInputView */,
 				174221A81E78D6680019E6F5 /* Nutrick */,
 				174221A71E78D6680019E6F5 /* Products */,
 			);
@@ -73,6 +98,7 @@
 		174221A81E78D6680019E6F5 /* Nutrick */ = {
 			isa = PBXGroup;
 			children = (
+				17BBBB041EACF3EF00A1A51E /* Nutrick.entitlements */,
 				174221A91E78D6680019E6F5 /* AppDelegate.swift */,
 				174221AB1E78D6680019E6F5 /* ViewController.swift */,
 				174221C91E78E3020019E6F5 /* ShowSplashScreen.swift */,
@@ -82,6 +108,8 @@
 				174221B51E78D6680019E6F5 /* Info.plist */,
 				17C809421E7A853F0096A742 /* SignUpViewController.swift */,
 				17FB0D3C1E99710D00F48934 /* ActivationCodeViewController.swift */,
+				1723F4271E99A4AB00E0BCE5 /* AddGroupContactsViewController.swift */,
+				1723F4291E99ACC800E0BCE5 /* CreateNewGroupViewController.swift */,
 			);
 			path = Nutrick;
 			sourceTree = "<group>";
@@ -114,13 +142,19 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = nutrick;
 				TargetAttributes = {
 					174221A51E78D6680019E6F5 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 2PM5WY4P2M;
 						LastSwiftMigration = 0830;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -160,8 +194,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1736B5471E9979360003BD17 /* CodeInputView.swift in Sources */,
 				17FB0D3D1E99710D00F48934 /* ActivationCodeViewController.swift in Sources */,
 				174221AC1E78D6680019E6F5 /* ViewController.swift in Sources */,
+				1723F42A1E99ACC800E0BCE5 /* CreateNewGroupViewController.swift in Sources */,
+				1723F4281E99A4AB00E0BCE5 /* AddGroupContactsViewController.swift in Sources */,
 				174221AA1E78D6680019E6F5 /* AppDelegate.swift in Sources */,
 				17C809431E7A853F0096A742 /* SignUpViewController.swift in Sources */,
 				174221CA1E78E3020019E6F5 /* ShowSplashScreen.swift in Sources */,
@@ -204,8 +241,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Puneeth Kumar (436WWFFZ8B)";
@@ -251,8 +290,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Puneeth Kumar (436WWFFZ8B)";
@@ -273,6 +314,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "b19fce4c-f0c0-4c5f-a09a-2c2a4cc2bbf9";
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -282,8 +324,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = Nutrick/Nutrick.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Puneeth Kumar (436WWFFZ8B)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Puneeth Kumar (436WWFFZ8B)";
+				DEVELOPMENT_TEAM = 2PM5WY4P2M;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -292,7 +336,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Puneet.Nutrick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "b19fce4c-f0c0-4c5f-a09a-2c2a4cc2bbf9";
+				PROVISIONING_PROFILE_SPECIFIER = NutrickProfile;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -302,8 +347,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = Nutrick/Nutrick.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Puneeth Kumar (436WWFFZ8B)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Puneeth Kumar (436WWFFZ8B)";
+				DEVELOPMENT_TEAM = 2PM5WY4P2M;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -312,7 +359,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Puneet.Nutrick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "b19fce4c-f0c0-4c5f-a09a-2c2a4cc2bbf9";
+				PROVISIONING_PROFILE_SPECIFIER = NutrickProfile;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

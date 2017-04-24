@@ -12,12 +12,13 @@ class SignUpViewController: UIViewController, UITextFieldDelegate{
 
     
     @IBOutlet weak var signUpScrollView: UIScrollView!
-    
     @IBOutlet weak var firstNameText: UITextField!
     @IBOutlet weak var lastNameText: UITextField!
     @IBOutlet weak var emailIDText: UITextField!
     @IBOutlet weak var userNameText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
+    @IBOutlet weak var createProfile: UIButton!
+    
     
     
     var activeField: UITextField?
@@ -46,6 +47,13 @@ class SignUpViewController: UIViewController, UITextFieldDelegate{
         signUpScrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
         
         
+    }
+    
+    
+    @IBAction func createProfileBtn(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let addGroupViewController = storyBoard.instantiateViewController(withIdentifier: "addGroupContacts") as! AddGroupContactsViewController
+        self.present(addGroupViewController, animated:true, completion:nil)
     }
 
 

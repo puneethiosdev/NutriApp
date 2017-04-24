@@ -16,7 +16,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var activationCodeLbl: UILabel!
     
     
-    let limitLength = 12 // mobile number text limit
+    let limitLength = 10 // mobile number text limit
     let otpLimitLength = 4 //OTP text limit
     
     override func viewDidLoad() {
@@ -44,9 +44,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "activationCode") as! SignUpViewController
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "activationCode") as! ActivationCodeViewController
         self.present(nextViewController, animated:true, completion:nil)
         
+//        verifyOTP()
+        
+//        let newViewController = SignUpViewController()
+//        self.navigationController?.pushViewController(newViewController, animated: true)
+        
+        
+
         
         
 //        var inputTextField: UITextField?
@@ -81,7 +88,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         
         
-        
         //        // Create the alert controller
         //        let alertController = UIAlertController(title: "OTP", message: "Enter OTP", preferredStyle: .alert)
         //
@@ -101,16 +107,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
         //
         //        // Present the controller
         //        self.present(alertController, animated: true, completion: nil)
-        
-        
-
-        
     }
     
     
     func SendOTP() {
     
-        let parameters = ["phone_number": mobileNumberTxt.text] as! Dictionary<String, String>
+        let phoneNumber: String = countryCode.text! + mobileNumberTxt.text!
+        
+        let parameters = ["phone_number": phoneNumber] //as? Dictionary<String, String>
         
         //create the url with URL
         let url = URL(string: "http://35.167.26.174:81/users/api/v0/user_create/")! //change the url
@@ -199,6 +203,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 if let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
                     print(json)
                     // handle json...
+                    
                 }
                 
             } catch let error {
